@@ -7,7 +7,7 @@ from PIL import Image, ImageDraw, ImageFont
 import math
 import os
 
-W, H, TOP, BOT = 640, 320, 50, 270
+W, H, TOP, BOT = 640, 320, 50, 270  # content must stay within y in [TOP, BOT]
 
 
 def load(sz, bold=True):
@@ -37,17 +37,20 @@ def gen(N, colors, duration):
         d = ImageDraw.Draw(im)
         gy = int(140 + 25 * p)
         d.rectangle([0, gy - 22, W, gy + 22], fill=(min(r + 4, 255), min(g + 8, 255), min(b + 10, 255)))
-        d.rounded_rectangle([3, 3, W - 4, H - 4], radius=9, outline=(103, 232, 249), width=1)
+        # Border frame kept strictly inside the 50px safe bands
+        d.rounded_rectangle([3, TOP, W - 4, BOT], radius=9, outline=(103, 232, 249), width=1)
 
         def strata(y0, a1, a2, sp, drift, color):
-            pts = [(-12, H + 12)]
+            # Waves drawn with their floor clamped to BOT so every layer stays
+            # inside the 50px bottom safe zone (no bleed past y = BOT).
+            pts = [(-12, BOT)]
             x = -12
             while x <= W + 12:
-                y = (y0 + a1 * math.sin(x * sp + 2 * math.pi * t * drift)
-                     + a2 * math.sin(x * sp * 0.53 + 1.2 + 2 * math.pi * t * drift * 0.7))
+                y = min(BOT, y0 + a1 * math.sin(x * sp + 2 * math.pi * t * drift)
+                        + a2 * math.sin(x * sp * 0.53 + 1.2 + 2 * math.pi * t * drift * 0.7))
                 pts.append((x, y))
                 x += 14
-            pts.append((W + 12, H + 12))
+            pts.append((W + 12, BOT))
             d.polygon(pts, fill=color)
 
         strata(236, 5, 3, 0.020, 1.0, (18, 96, 116))
@@ -58,7 +61,7 @@ def gen(N, colors, duration):
                    (410, 5, 10.0, 4.2), (490, 4, 9.0, 3.1), (565, 6, 12.0, 5.5), (610, 3, 6.5, 0.4)]
         for bx, br, dur, beg in bubbles:
             u = ((t * 40 * (80 / duration) - beg) % dur) / dur
-            y = 262 - u * (262 - (TOP + 22 + br))
+            y = (BOT - 8) - u * ((BOT - 8) - (TOP + 22 + br))  # rise within safe zone
             a = min(u / 0.35, 1.0) * (1 - u)
             col = tuple(int(c * 0.55 * a) for c in (103, 232, 249))
             d.ellipse([bx - br, y - br, bx + br, y + br], fill=col)
