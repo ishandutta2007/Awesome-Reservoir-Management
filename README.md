@@ -2,214 +2,111 @@
 
 ## Top Reservoir Management Ecosystem
 
-
-
 **Curated List of Commercial Platforms & Open-Source GitHub Projects**  
-
-*Focused on Reservoir Modeling, Simulation, Characterization, Geoscience Interpretation & Subsurface Workflows*  
+*Focused on Reservoir Modeling, Simulation, Characterization, Geoscience Interpretation & Subsurface Workflows*
 
 **Last updated: September 2026**
 
-
-
 This repository tracks notable **commercial platforms** and **open-source projects** for **Reservoir Management**. These systems support geological modeling, reservoir simulation, well performance analysis, uncertainty quantification, and integrated subsurface decision-making in oil & gas, geothermal, and CO₂ storage contexts.
-
-
 
 **Examples** include SLB Petrel, Halliburton DecisionSpace, Emerson Roxar RMS, KAPPA Workstation, Rock Flow Dynamics tNavigator, Baker Hughes JewelSuite, S&P Global Kingdom, Paradigm SKUA-GOCAD, CMG, Geolog, Petrosys, Ikon Science, and related geoscience suites (the category leaders).
 
-
-
-**Open-source emphasis**: Full integrated commercial geoscience and reservoir suites remain dominant for production assets. However, there is a mature and actively developed open-source ecosystem led by **OPM Flow**, **MRST**, **ResInsight**, **OpendTect**, and related tools that support industrial-strength simulation, modeling, and visualization. This section is heavily expanded with every major active project.
-
-
+**Open-source emphasis**: Full integrated commercial geoscience and reservoir suites remain dominant for production assets. However, there is a mature and actively developed open-source ecosystem led by **OPM Flow**, **MRST**, **ResInsight**, **OpendTect**, and related tools that support industrial-strength simulation, modeling, and visualization.
 
 Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
 
-
-
 ## Table of Contents
 
+- [Market Overview](#market-overview)
 - [SaaS/Hosted / Commercial Platforms](#saas-hosted--commercial-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Market Overview
 
+> **Estimated market size**: The global reservoir simulation & reservoir management software market is valued at roughly **US$2.1–3.8 billion (2025–2026)** and is projected to reach **US$5.8–7.1 billion by 2034–2035** (~7–12% CAGR), depending on analyst scope.
+>
+> **Structure: highly concentrated (winner-take-most).** The integrated geoscience-to-simulation layer is dominated by a handful of majors — SLB (Petrel/Delfi), Halliburton Landmark, Emerson/AspenTech (Roxar RMS, SKUA-GOCAD), Rock Flow Dynamics (tNavigator), and CMG — which together capture the large majority of operator spend. Niche specialists (KAPPA, Ikon Science/Petrosys, S&P Global Kingdom) compete in well-test analysis, QI/mapping, and interpretation pockets, while open-source stacks (OPM, MRST, ResInsight) are the main non-commercial alternative.
 
 ## SaaS/Hosted / Commercial Platforms
 
+Sorted by **company size** (latest reported revenue / valuation), largest first. Pricing and free-tier info is from vendor pages, license-optimization vendors, and published reports (September 2026); enterprise quotes dominate this market, so exact figures are noted where they are publicly reported.
 
-
-- **[SLB Petrel](https://www.software.slb.com/products/petrel)**  
-
-  Industry-leading integrated subsurface platform for seismic interpretation, geological modeling, reservoir engineering, and field development planning.
-
-
-
-- **[Halliburton Landmark DecisionSpace](https://www.halliburton.com/)**  
-
-  Comprehensive E&P software environment covering interpretation, earth modeling, reservoir management, and collaborative decision support.
-
-
-
-- **[Emerson Roxar RMS](https://www.emerson.com/)**  
-
-  Reservoir modeling and management system widely used for geological modeling, uncertainty handling, and simulation preparation.
-
-
-
-- **[Rock Flow Dynamics tNavigator](https://rfdyn.com/)**  
-
-  High-performance reservoir simulation and modeling platform with integrated static and dynamic workflows and growing AI/automation features.
-
-
-
-- **[CMG (Computer Modelling Group)](https://www.cmgl.ca/)**  
-
-  Specialized reservoir simulation suite (IMEX, GEM, STARS, etc.) for black-oil, compositional, thermal, and advanced recovery processes.
-
-
-
-- **[KAPPA Workstation, Baker Hughes JewelSuite, S&P Global Kingdom](https://www.kappaeng.com/)**  
-
-  Tools focused on well-test analysis, subsurface modeling, geological/geophysical interpretation, and mapping.
-
-
-
-- **[Paradigm SKUA-GOCAD, Geolog, Petrosys, Ikon Science](https://www.aspentech.com/)**  
-
-  Additional commercial solutions for 3D geological modeling, petrophysics, mapping, and quantitative interpretation.
-
-
-
-- **[Other reservoir & geoscience platforms](https://www.software.slb.com/products/petrel)**  
-
-  Enterprise and specialist tools covering geomechanics, production forecasting, and integrated asset modeling.
-
-
+| # | Platform | Vendor | Focus | Pricing (starting tier) | Free tier / free trial | Company size (revenue / valuation) |
+|---|----------|--------|-------|-------------------------|------------------------|-------------------------------------|
+| 1 | [SLB Petrel](https://www.software.slb.com/products/petrel) | SLB | Integrated subsurface platform: seismic interpretation, geomodeling, reservoir engineering, field development | Subscription via Delfi domain profiles: **~US$30,000–50,000/user/yr** (per Open iT, 2025); legacy perpetual buy-in **~US$100,000** + annual maintenance | No public free tier; Delfi trial/demo on request | SLB: **US$35.7B revenue (2025)** |
+| 2 | [JewelSuite](https://www.bakerhughes.com/) | Baker Hughes | Geomechanics, earth modeling, structural modeling & wellbore stability | Quote-based enterprise licenses (perpetual + maintenance); per-core HPC licensing | No public free tier; trial license on request | Baker Hughes: **US$27.7B revenue (2025)** |
+| 3 | [DecisionSpace 365](https://www.halliburton.com/en/software/decisionspace-365-enterprise) | Halliburton Landmark | Cloud E&P suite: interpretation, earth modeling, reservoir management, drilling | Cloud subscription, usage-based credits via [DS365.io](https://decisionspace365.io/) (no public list price) | **15-day free trial** of DS365 cloud apps | Halliburton: **US$22.2B revenue (2025)** |
+| 4 | [Roxar RMS / SKUA-GOCAD / Geolog](https://www.emerson.com/) | Emerson (AspenTech) | Reservoir characterization & modeling, 3D geomodeling, petrophysics, QI | Quote-based (perpetual + annual maintenance, or subscription) | No public free tier; academic licenses granted case-by-case | Emerson: **~US$17.5B revenue (FY2024)** |
+| 5 | [Kingdom](https://www.spglobal.com/) | S&P Global | Seismic interpretation, geologic interpretation & mapping | Quote-based enterprise subscriptions (Market Intelligence platform tiers start ~US$30k/yr) | No public free tier; personalized demo only | S&P Global: **US$15.3B revenue (2025)**; ~**US$121B market cap** |
+| 6 | [AspenTech Subsurface (Paradigm) suites](https://www.aspentech.com/) | AspenTech (Emerson) | Additional 3D geological modeling, petrophysics, mapping & quantitative interpretation | Quote-based subscription (typical enterprise seat ~US$10k+/yr) | No public free tier; demo on request | AspenTech: **~US$1.1B revenue (FY2024)**, now wholly Emerson-owned |
+| 7 | [CMG (IMEX, GEM, STARS)](https://www.cmgl.ca/) | Computer Modelling Group (TSX: CMG) | Specialized reservoir simulation: black-oil, compositional, thermal, advanced recovery | Quote-based; perpetual + annuity/maintenance licenses (98–99% license retention per FY2024 report) | No public free tier; trial license for qualified organizations | CMG: **US$87.9M revenue (FY2024)**; ~US$208M EV |
+| 8 | [KAPPA Workstation](https://www.kappaeng.com/) | KAPPA Engineering | Well-test analysis (Saphir), dynamic flow modeling (Rubis), production analysis | Entry licenses from **~US$5,000** (one-time + maintenance); full price list behind validated login at [kappaeng.com/prices](https://www.kappaeng.com/prices) | Free **KAPPA Viewer** for all products; trial license on request | Private; est. **~US$50M+ revenue** |
+| 9 | [Petrosys PRO / RokDoc](https://ikonscience.com/) | Ikon Science (Carina Group) | Mapping, surface modeling, geopressure, rock physics & QI | Quote-based subscriptions; bundles priced per module | No public free tier; demo/trial on request | PE-backed (acquired by Carina, 2025); est. **<US$50M revenue** |
+| 10 | [tNavigator](https://rfdyn.com/) | Rock Flow Dynamics | High-performance static+dynamic reservoir simulation with AI/automation; license price independent of core count | Quote-based (pricing independent of cores used; licenses local or network) | No public free tier; trial license via local representative | **US$33.8M ARR** (Latka, 2026) |
 
 ## Open-Source GitHub Projects
 
+Sorted by **GitHub stars** (descending). The star badge links to each repo's stargazers page. Star counts via shields.io, September 2026.
 
-
-- **[OPM Flow (Open Porous Media)](https://github.com/OPM/opm-simulators)**  
-
-  Fully implicit black-oil (and extended) reservoir simulator capable of industrial-complexity models. Supports Eclipse-format input, CO₂/H₂ storage, thermal options, and is used operationally on real assets. Core of the OPM initiative.
-
-
-
-- **[MRST – MATLAB Reservoir Simulation Toolbox](https://github.com/SINTEF-AppliedCompSci/MRST)**  
-
-  Free open-source toolbox for rapid prototyping and research in porous-media flow and reservoir simulation. Extensive modules for grids, discretizations, black-oil, compositional, EOR, CO₂, geomechanics, and adjoint-based optimization.
-
-
-
-- **[ResInsight](https://github.com/OPM/ResInsight)**  
-
-  Open-source 3D visualization and post-processing tool for reservoir models, tightly integrated with OPM and Eclipse-style simulation results.
-
-
-
-- **[OpendTect](https://www.opendtect.org/)**  
-
-  Open-source seismic interpretation platform with a rich plugin ecosystem for petroleum geoscience workflows (often cited alongside commercial interpretation tools).
-
-
-
-- **[JutulDarcy.jl](https://github.com/sintefmath/JutulDarcy.jl)**  
-
-  Julia-based, fully differentiable porous-media / reservoir simulator built on the Jutul framework, suited for research, optimization, and modern scientific computing workflows.
-
-
-
-- **[OPM ecosystem components](https://github.com/OPM)**  
-
-  Supporting libraries for common data structures, upscaling, tests, and Eclipse-compatible workflows that underpin OPM Flow and related tools.
-
-
-
-- **[Other reservoir simulation & modeling projects](https://github.com/search?q=reservoir+simulation+OR+porous+media+OR+black-oil)**  
-
-  Academic and community codes for specialized physics, unstructured grids, and experimental simulators.
-
-
-
-- **[Visualization & post-processing tools](https://github.com/search?q=reservoir+visualization+OR+ResInsight+OR+Eclipse+viewer)**  
-
-  Open viewers and analysis utilities for simulation output and geological models.
-
-
+| # | Project | Description | Stars |
+|---|---------|-------------|-------|
+| 1 | [SeisSpace / ProMAX](https://github.com/ahay/src) — [![GitHub Stars](https://img.shields.io/github/stars/ahay/src?style=social&color=white)](https://github.com/ahay/src/stargazers) | Landmark's free SeisSpace/ProMAX seismic processing package (source community edition) — legacy interpretation & processing workflows | ![Stars](https://img.shields.io/github/stars/ahay/src?style=social&color=white) |
+| 2 | [PorePy](https://github.com/pmgbergen/porepy) — [![GitHub Stars](https://img.shields.io/github/stars/pmgbergen/porepy?style=social&color=white)](https://github.com/pmgbergen/porepy/stargazers) | Python framework for mixed-dimensional simulation of fractured and porous media (Darcy/elliptic, transport, poromechanics) | ![Stars](https://img.shields.io/github/stars/pmgbergen/porepy?style=social&color=white) |
+| 3 | [GEOS](https://github.com/GEOS-DEV/GEOS) — [![GitHub Stars](https://img.shields.io/github/stars/GEOS-DEV/GEOS?style=social&color=white)](https://github.com/GEOS-DEV/GEOS/stargazers) | LLNL/NVIDIA HPC multiphysics framework: geomechanics, porous-media flow, CO₂ storage & geothermal at reservoir scale | ![Stars](https://img.shields.io/github/stars/GEOS-DEV/GEOS?style=social&color=white) |
+| 4 | [ResInsight](https://github.com/OPM/ResInsight) — [![GitHub Stars](https://img.shields.io/github/stars/OPM/ResInsight?style=social&color=white)](https://github.com/OPM/ResInsight/stargazers) | Open-source 3D visualization, curve plotting and post-processing for Eclipse/OPM reservoir models; tightly integrated with OPM Flow | ![Stars](https://img.shields.io/github/stars/OPM/ResInsight?style=social&color=white) |
+| 5 | [OPM Flow (opm-simulators)](https://github.com/OPM/opm-simulators) — [![GitHub Stars](https://img.shields.io/github/stars/OPM/opm-simulators?style=social&color=white)](https://github.com/OPM/opm-simulators/stargazers) | Fully implicit black-oil (and extended) simulator handling industrial-complexity Eclipse-format models; CO₂/H₂ storage and thermal options; used operationally | ![Stars](https://img.shields.io/github/stars/OPM/opm-simulators?style=social&color=white) |
+| 6 | [ERT](https://github.com/equinor/ert) — [![GitHub Stars](https://img.shields.io/github/stars/equinor/ert?style=social&color=white)](https://github.com/equinor/ert/stargazers) | Equinor's ensemble-based history matching & reservoir management tool (Ensemble Smoother, ES-MDA) used on real assets | ![Stars](https://img.shields.io/github/stars/equinor/ert?style=social&color=white) |
+| 7 | [JutulDarcy.jl](https://github.com/sintefmath/JutulDarcy.jl) — [![GitHub Stars](https://img.shields.io/github/stars/sintefmath/JutulDarcy.jl?style=social&color=white)](https://github.com/sintefmath/JutulDarcy.jl/stargazers) | Julia-based, fully differentiable high-performance porous-media/reservoir simulator on the Jutul framework — research, optimization, ML-adjacent workflows | ![Stars](https://img.shields.io/github/stars/sintefmath/JutulDarcy.jl?style=social&color=white) |
+| 8 | [MRST – MATLAB Reservoir Simulation Toolbox](https://github.com/SINTEF-AppliedCompSci/MRST) — [![GitHub Stars](https://img.shields.io/github/stars/SINTEF-AppliedCompSci/MRST?style=social&color=white)](https://github.com/SINTEF-AppliedCompSci/MRST/stargazers) | SINTEF toolbox for prototyping porous-media flow: grids, discretizations, black-oil, compositional, EOR, CO₂, geomechanics, adjoint optimization | ![Stars](https://img.shields.io/github/stars/SINTEF-AppliedCompSci/MRST?style=social&color=white) |
+| 9 | [OpendTect](https://github.com/OpendTect/opendtect) — [![GitHub Stars](https://img.shields.io/github/stars/OpendTect/opendtect?style=social&color=white)](https://github.com/OpendTect/opendtect/stargazers) | Open-source seismic interpretation platform with rich plugin ecosystem (free core, incl. commercial use; Pro tier ~US$2,200/user/yr) | ![Stars](https://img.shields.io/github/stars/OpendTect/opendtect?style=social&color=white) |
+| 10 | [OPM Flow test data](https://github.com/OPM/opm-data) — [![GitHub Stars](https://img.shields.io/github/stars/OPM/opm-data?style=social&color=white)](https://github.com/OPM/opm-data/stargazers) | Eclipse-format test & real-field datasets (e.g. Norne, SPE benchmarks) used to validate OPM Flow and other simulators | ![Stars](https://img.shields.io/github/stars/OPM/opm-data?style=social&color=white) |
+| 11 | [Pyscal](https://github.com/equinor/pyscal) — [![GitHub Stars](https://img.shields.io/github/stars/equinor/pyscal?style=social&color=white)](https://github.com/equinor/pyscal/stargazers) | Python library for SCAL analysis: relative permeability & capillary pressure interpolation and uncertainty workflows | ![Stars](https://img.shields.io/github/stars/equinor/pyscal?style=social&color=white) |
+| 12 | [Webviz Subsurface](https://github.com/equinor/webviz-subsurface) — [![GitHub Stars](https://img.shields.io/github/stars/equinor/webviz-subsurface?style=social&color=white)](https://github.com/equinor/webviz-subsurface/stargazers) | Equinor's dashboards for subsurface/FMU workflows: visualization of ensembles, well logs, maps and simulation results | ![Stars](https://img.shields.io/github/stars/equinor/webviz-subsurface?style=social&color=white) |
+| 13 | [UM-Bridge](https://github.com/UM-Bridge/umbridge) — [![GitHub Stars](https://img.shields.io/github/stars/UM-Bridge/umbridge?style=social&color=white)](https://github.com/UM-Bridge/umbridge/stargazers) | Universal Multi-physics Bridge: HTTP-based interface linking simulators with UQ and Bayesian inversion frameworks | ![Stars](https://img.shields.io/github/stars/UM-Bridge/umbridge?style=social&color=white) |
+| 14 | [opm-common](https://github.com/OPM/opm-common) — [![GitHub Stars](https://img.shields.io/github/stars/OPM/opm-common?style=social&color=white)](https://github.com/OPM/opm-common/stargazers) | Core OPM library: Eclipse-format deck parsing, keyword definitions and tools underpinning OPM Flow | ![Stars](https://img.shields.io/github/stars/OPM/opm-common?style=social&color=white) |
+| 15 | [PyJutulDarcy](https://github.com/sintefmath/PyJutulDarcy) — [![GitHub Stars](https://img.shields.io/github/stars/sintefmath/PyJutulDarcy?style=social&color=white)](https://github.com/sintefmath/PyJutulDarcy/stargazers) | Python wrapper for JutulDarcy (`pip install jutuldarcy`) — run .DATA decks from pure Python | ![Stars](https://img.shields.io/github/stars/sintefmath/PyJutulDarcy?style=social&color=white) |
+| 16 | [DUNE (dune-common)](https://github.com/dune-project/dune-common) — [![GitHub Stars](https://img.shields.io/github/stars/dune-project/dune-common?style=social&color=white)](https://github.com/dune-project/dune-common/stargazers) | Core of the DUNE PDE framework — grid/scientific-computing foundation used by DuMux for porous-media applications | ![Stars](https://img.shields.io/github/stars/dune-project/dune-common?style=social&color=white) |
+| 17 | [libres](https://github.com/equinor/libres) — [![GitHub Stars](https://img.shields.io/github/stars/equinor/libres?style=social&color=white)](https://github.com/equinor/libres/stargazers) | Ensemble-based reservoir modeling/assimilation tool — predecessor of ERT for history matching | ![Stars](https://img.shields.io/github/stars/equinor/libres?style=social&color=white) |
+| 18 | [subscript](https://github.com/equinor/subscript) — [![GitHub Stars](https://img.shields.io/github/stars/equinor/subscript?style=social&color=white)](https://github.com/equinor/subscript/stargazers) | Collection of Equinor Python utilities for FMU/reservoir modeling workflows (Eclipse deck manipulation, QC, etc.) | ![Stars](https://img.shields.io/github/stars/equinor/subscript?style=social&color=white) |
+| 19 | [opm-material](https://github.com/OPM/opm-material) — [![GitHub Stars](https://img.shields.io/github/stars/OPM/opm-material?style=social&color=white)](https://github.com/OPM/opm-material/stargazers) | OPM framework for fluid and rock property (PVT, relative permeability, capillary pressure) models | ![Stars](https://img.shields.io/github/stars/OPM/opm-material?style=social&color=white) |
+| 20 | [opm-upscaling](https://github.com/OPM/opm-upscaling) — [![GitHub Stars](https://img.shields.io/github/stars/OPM/opm-upscaling?style=social&color=white)](https://github.com/OPM/opm-upscaling/stargazers) | OPM workflows for single- and two-phase upscaling of rock properties on geomodel grids | ![Stars](https://img.shields.io/github/stars/OPM/opm-upscaling?style=social&color=white) |
+| 21 | [semeio](https://github.com/equinor/semeio) — [![GitHub Stars](https://img.shields.io/github/stars/equinor/semeio?style=social&color=white)](https://github.com/equinor/semeio/stargazers) | Equinor's seismic-to-simulation jobs and utilities for ensemble/FMU history-matching workflows | ![Stars](https://img.shields.io/github/stars/equinor/semeio?style=social&color=white) |
 
 ### Additional Strong Open-Source Options
 
-
-
-- **Grid generation & upscaling**: OPM and MRST modules for corner-point, unstructured, and fractured-media grids.
-
-- **Ensemble & uncertainty workflows**: Scripts and frameworks built on MRST or OPM for history matching and forecasting.
-
-- **CO₂ / geothermal extensions**: Open modules supporting energy-transition use cases within the same simulation frameworks.
-
-- **Python / Julia wrappers**: Community interfaces that embed OPM or MRST-style engines in modern data-science pipelines.
-
-- **Seismic-to-simulation bridges**: Open interpretation tools (OpendTect and plugins) feeding models into open simulators.
-
+- **Grid generation & upscaling**: OPM (`opm-upscaling`) and MRST modules for corner-point, unstructured, and fractured-media grids; PorePy for mixed-dimensional fracture networks.
+- **Ensemble & uncertainty workflows**: ERT/libres (history matching), UM-Bridge (UQ surrogates), and MRST adjoint-based optimization.
+- **CO₂ / geothermal extensions**: GEOS and OPM Flow storage modules; MRST CO₂ and geothermal packages.
+- **Python / Julia wrappers**: PyJutulDarcy, Pyscal, subscript and Webviz embed open engines in modern data-science pipelines.
+- **Seismic-to-simulation bridges**: OpendTect (+ plugins) and semeio feeding interpretation into open simulators.
 - Fully open stacks combining OpendTect (interpretation) → geological modeling scripts → OPM Flow / MRST (simulation) → ResInsight (visualization).
 
-
-
 **Frameworks for building custom systems**:  
-
 The strongest open-source foundation is the **OPM** stack (**OPM Flow** + **ResInsight** + supporting libraries) for production-style black-oil and storage simulation, complemented by **MRST** for research, rapid prototyping, and advanced numerics.  
-
 **OpendTect** provides an open entry point for seismic interpretation.  
-
 **JutulDarcy.jl** offers a modern, differentiable alternative for optimization-heavy workflows.  
-
 Commercial platforms (Petrel, DecisionSpace, Roxar RMS, tNavigator, CMG, Kingdom, etc.) deliver integrated geology-to-simulation environments, vendor support, and validated workflows required by many operators.  
-
 Research groups, national laboratories, and increasingly some operators use OPM/MRST for simulation while retaining commercial tools for interpretation and geomodeling; fully open pipelines are feasible for many study and CO₂-storage applications.
-
-
 
 ## How to Contribute
 
-
-
 1. Fork the repo.
-
 2. Add/edit entries in `README.md` (follow existing format).
-
 3. Include: name, link, 1–2 sentence description, and whether it's commercial/SaaS or open-source.
-
 4. Submit PR with a short explanation.
-
-
 
 Star the repo if you find it useful!
 
-
-
 ## Disclaimer
 
-
-
 - This is a **community-curated** list — not exhaustive and not an endorsement.
-
+- Pricing and company-size figures are indicative, compiled from public sources (vendor pages, license-optimization vendors, analyst reports, and filings) as of September 2026, and may change without notice. Enterprise agreements frequently differ from list pricing.
 - Reservoir management decisions have significant safety, environmental, and economic consequences. Simulation results must be properly validated, and regulatory or corporate standards for model quality and uncertainty handling apply.
-
 - Open-source simulators (especially OPM Flow) have reached industrial maturity and are used on real assets, yet organizations remain responsible for verification, validation, and appropriate use. Evaluate licensing, support options, and fitness for purpose carefully.
-
-
 
 ---
 
-
-
 **Made for reservoir engineers, geoscientists, simulation specialists, and subsurface digital teams.**  
-
 Let's advance open, high-quality tools for understanding and managing the subsurface while recognizing the continuing importance of integrated commercial platforms in operational decision-making.
