@@ -4,10 +4,12 @@
 
 # Awesome Reservoir Management
 
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
 [![GitHub stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Reservoir-Management?style=social)](https://github.com/ishandutta2007/Awesome-Reservoir-Management/stargazers)
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#how-to-contribute)
 [![Last updated](https://img.shields.io/badge/Updated-September_2026-blue)](#)
+<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 > **The definitive curated list of reservoir management software** — commercial platforms (SaaS/hosted) and open-source GitHub projects for **reservoir simulation**, **geological & reservoir modeling**, **seismic interpretation**, **well test analysis**, **history matching**, **uncertainty quantification**, and integrated subsurface decision-making in **oil & gas**, **geothermal**, and **CO₂ storage (CCS)**.
 
@@ -22,6 +24,7 @@
 - [Open-Source GitHub Projects](#open-source-github-projects)
 - [How to Contribute](#how-to-contribute)
 - [Disclaimer](#disclaimer)
+- [Star History](#star-history)
 
 ## Market Overview
 
@@ -122,6 +125,12 @@ Suggested repo topics for discoverability: `reservoir-management`, `reservoir-si
 - Pricing and company-size figures are indicative, compiled from public sources (vendor pages, license-optimization vendors, analyst reports, and filings) as of September 2026, and may change without notice. Enterprise agreements frequently differ from list pricing.
 - Reservoir management decisions have significant safety, environmental, and economic consequences. Simulation results must be properly validated, and regulatory or corporate standards for model quality and uncertainty handling apply.
 - Open-source simulators (especially OPM Flow) have reached industrial maturity and are used on real assets, yet organizations remain responsible for verification, validation, and appropriate use. Evaluate licensing, support options, and fitness for purpose carefully.
+
+[Back to top ⬆](#readme-top)
+
+## Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Reservoir-Management)](https://star-history.dera.page/#repos=ishandutta2007/Awesome-Reservoir-Management)
 
 [Back to top ⬆](#readme-top)
 
