@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 400" width="1280" height="400" role="img" aria-label="Awesome Reservoir Management — open-source and commercial subsurface software">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07182b">
+        <animate attributeName="stop-color" values="#07182b;#0b2a45;#07182b" dur="10s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="55%" stop-color="#0d2f4e">
+        <animate attributeName="stop-color" values="#0d2f4e;#114060;#0d2f4e" dur="10s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#123c5c">
+        <animate attributeName="stop-color" values="#123c5c;#175d7d;#123c5c" dur="10s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <linearGradient id="glowline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0; 1 0; -1 0" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="strata1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0e7490" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#155e75" stop-opacity="0.25"/>
+    </linearGradient>
+    <linearGradient id="strata2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0891b2" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#0e7490" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="strata3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#14b8a6" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#0891b2" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect x="0" y="0" width="1280" height="400" fill="url(#bg)"/>
+  <rect x="6" y="6" width="1268" height="388" rx="18" fill="none" stroke="#67e8f9" stroke-opacity="0.25" stroke-width="2"/>
+
+  <!-- rising bubbles -->
+  <g fill="#67e8f9">
+    <circle cx="150" cy="0" r="6" opacity="0.5">
+      <animate attributeName="cy" values="430;110" dur="11s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.55;0" keyTimes="0;0.35;1" dur="11s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="300" cy="0" r="4" opacity="0.4">
+      <animate attributeName="cy" values="430;140" dur="8s" begin="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.5;0" keyTimes="0;0.35;1" dur="8s" begin="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="470" cy="0" r="7" opacity="0.35">
+      <animate attributeName="cy" values="430;130" dur="13s" begin="0.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.45;0" keyTimes="0;0.35;1" dur="13s" begin="0.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="660" cy="0" r="3.5" opacity="0.5">
+      <animate attributeName="cy" values="430;120" dur="7s" begin="2.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.55;0" keyTimes="0;0.35;1" dur="7s" begin="2.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="820" cy="0" r="5.5" opacity="0.4">
+      <animate attributeName="cy" values="430;115" dur="10s" begin="4.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.5;0" keyTimes="0;0.35;1" dur="10s" begin="4.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="980" cy="0" r="4" opacity="0.45">
+      <animate attributeName="cy" values="430;135" dur="9s" begin="3.1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.5;0" keyTimes="0;0.35;1" dur="9s" begin="3.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1130" cy="0" r="6.5" opacity="0.4">
+      <animate attributeName="cy" values="430;125" dur="12s" begin="5.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.5;0" keyTimes="0;0.35;1" dur="12s" begin="5.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1230" cy="0" r="3" opacity="0.5">
+      <animate attributeName="cy" values="430;145" dur="6.5s" begin="0.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.55;0" keyTimes="0;0.35;1" dur="6.5s" begin="0.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- flowing reservoir strata (drifting horizontally) -->
+  <g>
+    <path fill="url(#strata1)" d="M-60,318 C 140,296 320,336 520,316 C 720,296 900,338 1100,318 C 1200,308 1280,320 1340,314 L1340,410 L-60,410 Z">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 42 -3; 0 0" dur="14s" repeatCount="indefinite"/>
+    </path>
+    <path fill="url(#strata2)" d="M-60,348 C 180,326 360,366 560,348 C 760,330 940,368 1140,350 C 1220,344 1290,354 1340,348 L1340,410 L-60,410 Z">
+      <animateTransform attributeName="transform" type="translate" values="0 0; -55 2; 0 0" dur="11s" repeatCount="indefinite"/>
+    </path>
+    <path fill="url(#strata3)" d="M-60,376 C 220,358 420,392 640,378 C 860,364 1040,394 1340,376 L1340,410 L-60,410 Z">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 35 0; 0 0" dur="9s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- title block -->
+  <g text-family="Segoe UI, Helvetica, Arial, sans-serif" text-anchor="middle">
+    <text x="640" y="150" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="62" font-weight="700" fill="#f0f9ff" letter-spacing="1">Awesome Reservoir Management</text>
+    <rect x="340" y="172" width="600" height="4" rx="2" fill="url(#glowline)"/>
+    <text x="640" y="222" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="27" fill="#9fd3e8">Commercial Platforms &amp; Open-Source Subsurface Software</text>
+    <text x="640" y="262" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="20" fill="#7ba9c2" letter-spacing="2">RESERVOIR SIMULATION &#8226; GEOMODELING &#8226; OIL &amp; GAS &#8226; GEOTHERMAL &#8226; CO2 STORAGE</text>
+  </g>
+</svg>

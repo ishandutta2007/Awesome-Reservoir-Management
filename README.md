@@ -1,19 +1,19 @@
-# Awesome-Reservoir-Management
+<a id="readme-top"></a>
 
-## Top Reservoir Management Ecosystem
+![Awesome Reservoir Management — curated commercial platforms and open-source software for reservoir simulation, geological modeling, seismic interpretation, well test analysis and subsurface workflows](assets/banner.svg)
 
-**Curated List of Commercial Platforms & Open-Source GitHub Projects**  
-*Focused on Reservoir Modeling, Simulation, Characterization, Geoscience Interpretation & Subsurface Workflows*
+# Awesome Reservoir Management
 
-**Last updated: September 2026**
+[![GitHub stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Reservoir-Management?style=social)](https://github.com/ishandutta2007/Awesome-Reservoir-Management/stargazers)
+[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#how-to-contribute)
+[![Last updated](https://img.shields.io/badge/Updated-September_2026-blue)](#)
 
-This repository tracks notable **commercial platforms** and **open-source projects** for **Reservoir Management**. These systems support geological modeling, reservoir simulation, well performance analysis, uncertainty quantification, and integrated subsurface decision-making in oil & gas, geothermal, and CO₂ storage contexts.
+> **The definitive curated list of reservoir management software** — commercial platforms (SaaS/hosted) and open-source GitHub projects for **reservoir simulation**, **geological & reservoir modeling**, **seismic interpretation**, **well test analysis**, **history matching**, **uncertainty quantification**, and integrated subsurface decision-making in **oil & gas**, **geothermal**, and **CO₂ storage (CCS)**.
 
-**Examples** include SLB Petrel, Halliburton DecisionSpace, Emerson Roxar RMS, KAPPA Workstation, Rock Flow Dynamics tNavigator, Baker Hughes JewelSuite, S&P Global Kingdom, Paradigm SKUA-GOCAD, CMG, Geolog, Petrosys, Ikon Science, and related geoscience suites (the category leaders).
+**Who this is for:** reservoir engineers, geoscientists, simulation specialists, petrophysicists, and subsurface digital teams evaluating E&P software — from industry suites like SLB Petrel, Halliburton DecisionSpace 365, Emerson Roxar RMS, KAPPA Workstation, CMG, and Rock Flow Dynamics tNavigator, to open-source simulators and toolkits like OPM Flow, MRST, ResInsight, ERT, and JutulDarcy.jl.
 
-**Open-source emphasis**: Full integrated commercial geoscience and reservoir suites remain dominant for production assets. However, there is a mature and actively developed open-source ecosystem led by **OPM Flow**, **MRST**, **ResInsight**, **OpendTect**, and related tools that support industrial-strength simulation, modeling, and visualization.
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
+**Topics covered:** reservoir simulation software · black-oil & compositional simulators · geomodeling · Eclipse-format decks · seismic interpretation · well-test analysis · production forecasting · history matching & EnKF/ES-MDA · 4D seismic · pore-network modeling · digital rock physics · CO₂ sequestration · geothermal reservoirs · PVT & SCAL · FMU workflows · subsurface data science.
 
 ## Table of Contents
 
@@ -112,7 +112,9 @@ Research groups, national laboratories, and increasingly some operators use OPM/
 3. Include: name, link, 1–2 sentence description, and whether it's commercial/SaaS or open-source.
 4. Submit PR with a short explanation.
 
-Star the repo if you find it useful!
+Suggested repo topics for discoverability: `reservoir-management`, `reservoir-simulation`, `geoscience`, `petroleum-engineering`, `subsurface`, `geomodeling`, `ccs`, `geothermal`, `opm-flow`, `awesome-list`.
+
+[Back to top ⬆](#readme-top)
 
 ## Disclaimer
 
@@ -120,6 +122,8 @@ Star the repo if you find it useful!
 - Pricing and company-size figures are indicative, compiled from public sources (vendor pages, license-optimization vendors, analyst reports, and filings) as of September 2026, and may change without notice. Enterprise agreements frequently differ from list pricing.
 - Reservoir management decisions have significant safety, environmental, and economic consequences. Simulation results must be properly validated, and regulatory or corporate standards for model quality and uncertainty handling apply.
 - Open-source simulators (especially OPM Flow) have reached industrial maturity and are used on real assets, yet organizations remain responsible for verification, validation, and appropriate use. Evaluate licensing, support options, and fitness for purpose carefully.
+
+[Back to top ⬆](#readme-top)
 
 ---
 
